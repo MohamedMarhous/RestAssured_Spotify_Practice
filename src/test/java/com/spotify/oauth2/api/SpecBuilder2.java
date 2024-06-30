@@ -9,7 +9,7 @@ import io.restassured.specification.ResponseSpecification;
 
 import static com.spotify.oauth2.api.RouteEndPointsConstants.BASE_PATH;
 
-public class SpecBuilder {
+public class SpecBuilder2 {
 
     //static String access_token = "Bearer BQDVWH8JjCGI0NLubt2pnVQbww6yY01OKhn0fzlMpDVSIEY1lJpHEnULXThxttTGPJpB_B042npNRZkihNQhwu7cQLmgaUWLO4qsGwVuETgg_fQU9avEJHq4HxvjiXwi_nfOv-SFjqJdoWcML2IfX6yf6sdcvLMBLQbkPuvywWCzj-hDpyBezBzZ4Fc6AMSUsSMU8AJ3YLWGWc1YTaTG8u41yrSawtZQg27f-MHqvq_JfZZzwc0nDGP4HxSEqc4cUk7rIHUNMGK-_W2P";
 
