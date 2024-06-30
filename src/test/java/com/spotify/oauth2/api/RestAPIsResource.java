@@ -20,7 +20,7 @@ public class RestAPIsResource {
 
         return  given(getRequestSpec()).
                 body(requestPlaylist).
-                header("Authorization" , "Bearer " + token).
+                auth().oauth2(token).
                 when().post(path).
                 then().spec(getResponseSpec()).
                 extract().response();
@@ -43,7 +43,7 @@ public class RestAPIsResource {
     public static Response get(String path , String token){
 
         return given(getRequestSpec()).
-                header("Authorization" , "Bearer " + token).
+                auth().oauth2(token).
                 when().get(path).
                 then().spec(getResponseSpec()).extract().response();
 
@@ -54,7 +54,7 @@ public class RestAPIsResource {
 
        return given(getRequestSpec()).
                 body(requestPlaylist).
-               header("Authorization" , "Bearer " + token).
+               auth().oauth2(token).
                 when().put(path).
                 then().spec(getResponseSpec()).extract().response();
 
