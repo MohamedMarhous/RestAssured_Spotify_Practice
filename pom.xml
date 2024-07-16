@@ -16,7 +16,6 @@
     </properties>
 
 
-
     <build>
         <plugins>
             <plugin>
@@ -42,7 +41,6 @@
     </build>
 
 
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
@@ -51,9 +49,6 @@
             <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
-
-
-
 
         <dependency>
             <groupId>org.testng</groupId>
@@ -81,11 +76,11 @@
             <version>2.17.1</version>
         </dependency>
 
-     <!--   <dependency>
-            <groupId>jakarta.annotation</groupId>
-            <artifactId>jakarta.annotation-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>-->
+        <!--   <dependency>
+               <groupId>jakarta.annotation</groupId>
+               <artifactId>jakarta.annotation-api</artifactId>
+               <version>3.0.0</version>
+           </dependency>-->
 
         <dependency>
             <groupId>javax.annotation</groupId>
@@ -115,7 +110,6 @@
 
 
     </dependencies>
-
 
 
 </project>
