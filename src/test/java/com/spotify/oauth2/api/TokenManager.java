@@ -3,7 +3,6 @@ package com.spotify.oauth2.api;
 
 
 import com.spotify.oauth2.Utilties.ConfigLoader;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.time.Instant;
@@ -16,7 +15,7 @@ public class TokenManager {
     private static String access_token;
     private static Instant expiry_time;
 
-    public static String getToken() {
+    public synchronized static String getToken() {
 
         try {
             if (access_token == null || Instant.now().isAfter(expiry_time)) {
